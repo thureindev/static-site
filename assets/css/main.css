@@ -198,6 +198,12 @@ input, select, textarea {
 			font-size: 1.5em;
 			margin-left: 1em;
 		}
+    
+            /* update */
+            ul.icons.column-li > li {
+                display: block;
+                margin: 0 0 1em 0;
+            }
 
 			ul.icons li span {
 				display: none;
@@ -210,10 +216,14 @@ input, select, textarea {
 				-webkit-transition: opacity 0.25s ease-in-out;
 				-ms-transition: opacity 0.25s ease-in-out;
 				transition: opacity 0.25s ease-in-out;
+
+                text-decoration: none;
 			}
 
 				ul.icons li a:hover {
 					opacity: 1.0;
+
+                    text-decoration: none;
 				}
 
 			ul.icons li:first-child {
@@ -264,6 +274,19 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+
+/* Navbar */
+
+    .navbar {
+        border-radius: 50px;
+    }
+    @media screen and (max-width: 736px) {
+        
+        .navbar {
+            border-radius: 0;
+            width: 100vw;
+        }
+    }
 
 /* Wrapper */
 
@@ -324,12 +347,13 @@ input, select, textarea {
 		z-index: 10001;
 	}
 
+        .scrollZone.right {
+            right: 0;
+        }
+
 		.scrollZone.left {
 			left: 0;
-		}
-
-		.scrollZone.right {
-			right: 0;
+            width: 3rem;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -383,10 +407,18 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
+
 			margin: 5px;
 			height: 16em;
 			box-shadow: 0 0 0 10px #ffffff;
 		}
+
+        #main .items.about-me-items .item {
+            height: 28em;
+        }
+        #main .items.contact-me-items .item {
+            height: 28em;
+        }
 
 			#main .item.span-1 {
 				width: 20em;
@@ -400,8 +432,17 @@ input, select, textarea {
 				width: 40em;
 			}
 
+			#main .item.span-4 {
+				width: 60em;
+			}
+
 			#main .item.intro {
 				background-color: #d64760;
+                /* background-color: #B05CC6;
+                background-color: #8A1D8F; */
+                /* background-color: #F6A22A; */
+                /* background-color: #FA8072; */
+
 				background-image: url("images/overlay.png");
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -418,6 +459,12 @@ input, select, textarea {
 				padding: 1em 3em;
 			}
 
+            #main .item.intro ul.icons {
+                cursor: default;
+                margin: 0;
+                padding: 1em 0 0 0;
+            }
+
 				#main .item.intro h1 {
 					font-size: 3em;
 					line-height: 1em;
@@ -429,6 +476,14 @@ input, select, textarea {
 					margin: 0.5em 0 0 0;
 					opacity: 0.65;
 				}
+
+                #main .item.intro ul.icons li a {
+                    opacity: 1;
+                    color: #FA8072;
+                }
+                #main .item.intro ul.icons li a:hover {
+                    color: #fff;
+                }
 
 			#main .item.thumb {
 				display: block;
@@ -531,6 +586,14 @@ input, select, textarea {
 				height: 14em;
 			}
 
+                #main .items.about-me-items .item {
+                    height: 24em;
+                }
+
+                #main .items.contact-me-items .item {
+                    height: 24em;
+                }
+
 				#main .item.span-1 {
 					width: 17em;
 				}
@@ -543,6 +606,10 @@ input, select, textarea {
 					width: 34em;
 				}
 
+                #main .item.span-4 {
+                    width: 45em;
+                }
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -552,6 +619,13 @@ input, select, textarea {
 				overflow-x: hidden;
 				overflow-y: auto;
 				padding: 2.5px;
+                
+                /* update
+                display: -moz-flex;
+                display: -webkit-flex;
+                display: -ms-flex;
+                display: flex; */
+
 			}
 
 				#main .items {
@@ -563,6 +637,25 @@ input, select, textarea {
 					-webkit-justify-content: center;
 					-ms-justify-content: center;
 					justify-content: center;
+                    
+                    /* update */
+                    /* -moz-flex-grow: 0;
+                    -webkit-flex-grow: 0;
+                    -ms-flex-grow: 0;
+                    flex-grow: 0;
+                    -moz-flex-shrink: 0;
+                    -webkit-flex-shrink: 0;
+                    -ms-flex-shrink: 0;
+                    flex-shrink: 0;
+                    margin: 5px;
+                    height: 16em;
+                    box-shadow: 0 0 0 10px #ffffff; */
+                    
+                    /* update */
+                    /* -moz-flex-direction: column;
+                    -webkit-flex-direction: column;
+                    -ms-flex-direction: column;
+                    flex-direction: column; */
 				}
 
 					#main .items > :last-child {
@@ -579,16 +672,29 @@ input, select, textarea {
 					-ms-flex-shrink: 1;
 					flex-shrink: 1;
 					width: calc(50vw - 15px) !important;
+
 					margin: 2.5px;
 					box-shadow: 0 0 0 5px #ffffff;
 				}
 
 					#main .item.intro {
-						width: calc(100vw - 20px) !important;
+						width: calc(100vw - 15px) !important;
 						text-align: center;
 						height: auto;
 						padding: 3em;
 					}
+
+                    #main .item.focus {
+                        width: calc(100vw - 15px) !important;
+                        min-height: auto;
+                    }
+
+                    #main .item.focus.landscape {
+                        min-height: 5em;
+                    }
+                    #main .item.focus.normal {
+                        min-height: 15em;
+                    }
 
 						#main .item.intro h1 {
 							font-size: 2em;
@@ -612,7 +718,7 @@ input, select, textarea {
 
 		}
 
-/* Header */
+/* Footer */
 
 	#footer {
 		width: 100%;
@@ -686,6 +792,12 @@ input, select, textarea {
 			#footer {
 				text-align: center;
 				padding: 3em;
+
+                background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/footer_bg_pyrimids.jpg");
+                background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/footer_bg_pyrimids.jpg");
+                background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/footer_bg_pyrimids.jpg");
+                background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/footer_bg_pyrimids.jpg");
+            
 			}
 
 				#footer > section:first-child {

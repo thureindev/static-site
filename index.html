@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <!--
-	DESIGN | Parallelism by HTML5 UP
+	DESIGN Template | Parallelism by HTML5 UP
 	html5up.net | @ajlkn
 -->
 <html>
@@ -9,6 +9,9 @@
 		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- custom stylesheet -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -16,6 +19,29 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper">
+
+                <!-- Navbar -->
+                    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                        <!-- Image and text -->
+                        <a class="navbar-brand" href="#">
+                        <img src="images/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+                        T. Nndr
+                        </a>
+
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="index.html">Gallery <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="about-me.html">About Me</a>
+                            <a class="nav-item nav-link" href="contact.html">Contact</a>
+                            <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+                        </div>
+                        </div>
+                    </nav>
 
 				<!-- Main -->
 					<section id="main">
@@ -25,7 +51,23 @@
 
 								<div class="item intro span-2">
 									<h1>T. Nndr</h1>
-									<p>Striving for 3D artist career. All my works are done in Blender.</p>
+
+									<p>Striving for 3D artist career.</p>
+
+                                    <ul class="icons">
+                                        
+                                        <li><a target="_blank" href="https://www.artstation.com/tnndr7" class="icon brands fa-artstation fa-lg"><span class="label">ArtStation</span></a></li>
+        
+                                        <li><a target="_blank" href="https://www.instagram.com/t.nndr7" class="icon brands fa-instagram fa-lg"><span class="label">Instagram</span></a></li>
+                                        
+                                        <li><a target="_blank" href="https://www.twitter.com/tnndr7" class="icon brands fa-twitter fa-lg"><span class="label">Twitter</span></a></li>
+                                        
+                                        <li>
+                                            <a target="_blank" href="mailto:t.nndr.46@gmail.com?
+                                            &subject=Greetings
+                                            &body=Hello T. nndr, " class="icon solid fa-envelope fa-lg"><span class="label">Email</span></a>
+                                        </li>
+                                    </ul>
 								</div>
 
 								<article class="item thumb span-1">
@@ -56,10 +98,24 @@
 									</a>
 								</article>
 
-								<article class="item thumb span-3">
+								<article class="item thumb span-2 focus normal">
 									<h2>Kitchen Alchemy</h2>
 									<a href="images/fulls/kitchen_alchemy.jpg" class="image">
 										<img src="images/fulls/kitchen_alchemy.jpg" alt="a kitchen full of wares">
+									</a>
+								</article>
+
+								<article class="item thumb span-1">
+									<h2>Sweet Toothed</h2>
+									<a href="images/fulls/icecream_stand.jpg" class="image">
+										<img src="images/fulls/icecream_stand.jpg" alt="a cozy icecream_stand">
+									</a>
+								</article>
+
+								<article class="item thumb span-2">
+									<h2>The Oasis</h2>
+									<a href="images/fulls/little_pond.jpg" class="image">
+										<img src="images/fulls/little_pond.jpg" alt="an oasis with a little pond and a eucalyptus">
 									</a>
 								</article>
 
@@ -77,24 +133,17 @@
 									</a>
 								</article>
 
-								<article class="item thumb span-3">
-									<h2>Started Simple</h2>
-									<a href="images/fulls/simple_objects.jpg" class="image">
-										<img src="images/fulls/simple_objects.jpg" alt="">
+								<article class="item thumb span-1">
+									<h2>Christmas Vibe</h2>
+									<a href="images/fulls/snow_globe.jpg" class="image">
+										<img src="images/fulls/snow_globe.jpg" alt="a snow globe containing a cozy cottage">
 									</a>
 								</article>
 
 								<article class="item thumb span-1">
-									<h2>Milk Shake</h2>
-									<a href="images/fulls/milkshake.jpg" class="image">
-										<img src="images/fulls/milkshake.jpg" alt="">
-									</a>
-								</article>
-
-								<article class="item thumb span-2">
-									<h2>Halloween</h2>
-									<a href="images/fulls/pumpkins.jpg" class="image">
-										<img src="images/fulls/pumpkins.jpg" alt="">
+									<h2>Magic Lily</h2>
+									<a href="images/fulls/magic_lily.jpg" class="image">
+										<img src="images/fulls/magic_lily.jpg" alt="an purple imaginary flower that looks like a lily">
 									</a>
 								</article>
 
@@ -103,7 +152,7 @@
 						<!-- Items -->
 							<div class="items">
 
-								<article class="item thumb span-3">
+								<article class="item thumb span-3 focus landscape">
 									<h2>Lost In Time</h2>
 									<a href="images/fulls/columns.jpg" class="image">
 										<img src="images/fulls/columns.jpg" alt="Tall columns in a mesmerizing scenery">
@@ -124,14 +173,14 @@
 									</a>
 								</article>
 								
-								<article class="item thumb span-1">
+								<article class="item thumb span-1 focus normal">
 									<h2>Purple Orchid</h2>
 									<a href="images/fulls/orchid_purple.jpg" class="image">
 										<img src="images/fulls/orchid_purple.jpg" alt="">
 									</a>
 								</article>
 								
-								<article class="item thumb span-2">
+								<article class="item thumb span-2 focus normal">
 									<h2>The Magic Tombs</h2>
 									<a href="images/fulls/pyrimids.jpg" class="image">
 										<img src="images/fulls/pyrimids.jpg" alt="">
@@ -144,25 +193,32 @@
 										<img src="images/thumbs/donut_hologram.jpg" alt="a hologram of a donut">
 									</a>
 								</article>
-
-								<article class="item thumb span-2">
-									<h2>Sweet Toothed</h2>
-									<a href="images/fulls/icecream_stand.jpg" class="image">
-										<img src="images/thumbs/icecream_stand.jpg" alt="a cozy icecream_stand">
-									</a>
-								</article>
-
-								<article class="item thumb span-2">
-									<h2>The Oasis</h2>
-									<a href="images/fulls/little_pond.jpg" class="image">
-										<img src="images/fulls/little_pond.jpg" alt="an oasis with a little pond and a eucalyptus">
-									</a>
-								</article>
 								
 								<article class="item thumb span-1">
 									<h2>Glazing Donut</h2>
 									<a href="images/fulls/donut_brown.jpg" class="image">
 										<img src="images/fulls/donut_brown.jpg" alt="a single brown donut, galzing">
+									</a>
+								</article>
+
+								<article class="item thumb span-1">
+									<h2>Milk Shake</h2>
+									<a href="images/fulls/milkshake.jpg" class="image">
+										<img src="images/fulls/milkshake.jpg" alt="">
+									</a>
+								</article>
+
+								<article class="item thumb span-3">
+									<h2>Started Simple</h2>
+									<a href="images/fulls/simple_objects.jpg" class="image">
+										<img src="images/fulls/simple_objects.jpg" alt="">
+									</a>
+								</article>
+
+								<article class="item thumb span-2">
+									<h2>Halloween</h2>
+									<a href="images/fulls/pumpkins.jpg" class="image">
+										<img src="images/fulls/pumpkins.jpg" alt="">
 									</a>
 								</article>
 								
@@ -215,6 +271,11 @@
 					</section>
 
 			</div>
+
+        <!-- Bootstrap Scripts -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
