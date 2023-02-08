@@ -279,7 +279,18 @@ input, select, textarea {
 
     .navbar {
         border-radius: 50px;
+		position: relative;
+		z-index: 10002;
     }
+
+    @media screen and (max-width: 980px) {
+        
+        /* .navbar {
+            border-radius: 0;
+            width: 100vw;
+        } */
+    }
+    
     @media screen and (max-width: 736px) {
         
         .navbar {
@@ -287,6 +298,32 @@ input, select, textarea {
             width: 100vw;
         }
     }
+    
+    @media (min-width: 980) and (max-width: 991px) {
+        /*         
+        .navbar-right {
+          float: right!important;
+        }
+        .navbar-collapse.collapse {
+          display: block!important;
+          height: auto!important;
+          overflow: visible!important;
+          border: none;
+          margin-right: 15px;
+        }
+        .navbar-nav>.nav-item {
+          float: left;
+          margin: 5px 0;
+        }
+        .navbar-header {
+          float: left
+        }
+        .navbar-toggle {
+          display: none
+        } */
+        
+    }
+    
 
 /* Wrapper */
 
@@ -496,12 +533,14 @@ input, select, textarea {
 					position: absolute;
 					bottom: 0;
 					left: 0;
-					background: rgba(18, 21, 29, 0.85);
+					background: rgba(199, 210, 170, 0.45);
 					width: 100%;
 					padding: 1em;
 					font-weight: 400;
 					line-height: 1em;
 					z-index: 2;
+                    mix-blend-mode: luminosity;
+                    color: #fff;
 				}
 
 				#main .item.thumb img {
@@ -705,7 +744,8 @@ input, select, textarea {
 						}
 
 					#main .item.thumb h2 {
-						display: none;
+						/* display: none; */
+                        background: rgba(0, 0, 0, 0);
 					}
 
 		}
@@ -848,10 +888,14 @@ input, select, textarea {
 			position: absolute;
 			bottom: 0;
 			left: 0;
-			background: #1a1f2c;
-			background: rgba(18, 21, 29, 0.85);
+			/* background: #1a1f2c;
+			background: rgba(199, 210, 170, 0.65); */
+            background: rgba(0, 0, 0, 0);
 			display: block;
-			width: 100%;
+            width: 100%;
+
+            mix-blend-mode: luminosity;
+
 			line-height: 75px;
 			text-align: center;
 			font-size: 1.25em;
@@ -930,9 +974,9 @@ input, select, textarea {
 				box-sizing: content-box;
 			}
 
-				.poptrox-popup .caption {
+				/* .poptrox-popup .caption {
 					display: none !important;
-				}
+				} */
 
 				.poptrox-popup .nav-next {
 					display: none !important;
