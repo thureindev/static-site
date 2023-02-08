@@ -1,4 +1,5 @@
 
+/* to fix bootstrap collapsing navbar at 991px */
 @media (min-width: 737px) and (max-width: 991px) {
 
     .navbar-collapse.collapse {
@@ -44,10 +45,30 @@
     }
 }
 
-@media (min-width: 737px) and (max-width: 980px) {
+@media screen and (min-width: 737px) {
 
     .navbar {
-        
-        margin: 0.5rem 0;
+        margin-bottom: 20px;
+        max-width: 50vw;
+        left: 25vw;
     }
+    .collapse.navbar-collapse {
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1190px) {
+
+    .navbar {
+        max-width: 30vw;
+        left: 35vw;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    
+    .nav-item.nav-link {
+        border-bottom: gainsboro dotted 2px;
+    }
+
 }
