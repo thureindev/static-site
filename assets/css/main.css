@@ -228,6 +228,7 @@ input, select, textarea {
                 align-items: flex-end;
 
                 font-size: small;
+                text-align: right;
             }
 
             ul.icons.column-li > li {
