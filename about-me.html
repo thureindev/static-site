@@ -11,17 +11,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <!-- bootstrap css -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
         <!-- custom stylesheet -->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/bootstrap_tweaks.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://kit.fontawesome.com/fd02c3c8a3.css" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/fd02c3c8a3.js" crossorigin="anonymous"></script>
 	</head>
 	<body class="is-preload">
+        
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
-                <!-- Navbar -->
+                
+                <!-- Helper div -->
+                <div>
+                    
+                    <!-- Navbar -->
                     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
                         <!-- Image and text -->
                         <a class="navbar-brand" href="#">
@@ -44,14 +53,85 @@
                         </div>
                     </nav>
 
-				<!-- Main -->
+				    <!-- Main -->
 					<section id="main">
 
                         <div class="items about-me-items">
 
+                            <article class="item thumb span-1">
+                                
+                                <img src="images/profile/T-Nndr7_profile_pic.jpg" alt="profile picture of artist">
+                            </article>
+
+                            <article class="item intro span-3">
+                                <h1>Hello, I am T. Nandar</h1>
+
+                                <p>
+                                    It's been (
+                                        
+									<script type="text/javascript">
+
+                                        const monthDiff = (d1, d2) => {
+
+                                            let months;
+                                            months = (d2.getFullYear() - d1.getFullYear()) * 12;
+                                            months -= d1.getMonth();
+                                            months += d2.getMonth();
+
+                                            return months <= 0 ? 0 : months;
+                                        }
+                                        // Date(Year, MonthIdex, Day)
+                                        const start_date = new Date(2022, 6, 2)
+                                        const today_date = new Date()
+
+										document.write(monthDiff(start_date, today_date));
+                                        
+									</script>
+
+                                    ) months since I started learning 3D art using <em>Blender</em>. As a beginner, I feel accomplished for every new skill I learned.
+                                    <br><br>
+                                    I feel joy when I'm learning to create 3D artworks.
+                                    <br>
+                                    Something I've never felt in Med School.
+                                </p>
+                                
+
+                                <ul class="icons column-li">
+
+                                    <li>
+                                        <i class="fa fa-rocket"></i>
+                                        Started Learnig Blender 
+                                        | 
+                                        July, 2023
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </li>
+                                </ul>
+                            </article>
+
+                            <article class="item intro span-3" style="text-align: right; background-color: rgb(233, 150, 122);">
+                                <h1>#ArtVsArtist2022</h1>
+
+                                <p>
+                                    <em>My accomplished 2022!</em> I used to draw as a hobby. Now I'm working on Blender full-time.
+                                    <br><br>
+                                    My 2023 goal is to land a full-time 3D artist job. And make use of my skills to full potential.
+                                </p>
+                                
+
+                                <ul class="icons column-li">
+
+                                    <li>
+                                        <i class="fa-regular fa-star"></i>
+                                        Challenge Completed
+                                        | 
+                                        December, 2023
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                    </li>
+                                </ul>
+                            </article>
 
                             <article class="item thumb span-4 focus landscape">
-                                <h2>Art and Artist 2022</h2>
+                                
                                 <a href="images/profile/T-Nndr7_cover_pic.png" class="image">
                                     <img src="images/profile/T-Nndr7_cover_pic.png" alt="Profile picture of the artist surrounded by her art">
                                 </a>
@@ -70,12 +150,35 @@
                                     <img src="images/fulls/marshmallows.jpg" alt="marshmallows poured into a bowl">
                                 </a>
                             </article>
-
-                            <article class="item thumb span-1">
-                                <h2>Burning The Midnight Oil</h2>
-                                <a href="images/fulls/candle_light.jpg" class="image">
-                                    <img src="images/fulls/candle_light.jpg" alt="">
+								
+                            <article class="item thumb span-2 focus normal">
+                                <h2>Purple Orchid</h2>
+                                <a href="images/fulls/orchid_purple.jpg" class="image">
+                                    <img src="images/fulls/orchid_purple.jpg" alt="">
                                 </a>
+                            </article>
+
+                            <article class="item intro span-3" style="text-align: justify; background-color: rgb(233, 150, 122);">
+                                <h1>My Orchid, my Kitchen</h1>
+
+                                <p>
+                                    When I started, I wasn't really sure if my laptop can handle 3D Graphics. 
+                                    With only 8GB of RAM and outdated graphic card, I already want to give up.
+                                    <br><br>
+                                    But no excuse made when I work with passion.
+                                    <br><br>
+                                    Voilà, my Orchid and the Kitchen. The achievements I'm so proud of in my learning curve.
+                                </p>
+                                
+
+                                <ul class="icons column-li">
+
+                                    <li>
+                                        <i class="fa-solid fa-certificate"></i>
+                                        New Skills Unlocked
+                                        <i class="fa-solid fa-trophy"></i>
+                                    </li>
+                                </ul>
                             </article>
 
                             <article class="item thumb span-2 focus normal">
@@ -83,6 +186,16 @@
                                 <a href="images/fulls/kitchen_alchemy.jpg" class="image">
                                     <img src="images/fulls/kitchen_alchemy.jpg" alt="a kitchen full of wares">
                                 </a>
+                            </article>
+
+                            <article class="item thumb span-1">
+                                
+                                <img src="images/profile/T-Nndr7_profile_pic_2.jpg" alt="profile picture of artist">
+                            </article>
+
+                            <article class="item thumb span-1">
+                                
+                                <img src="images/profile/T-Nndr7_profile_pic_3.jpg" alt="profile picture of artist">
                             </article>
 
                             <div class="item intro span-2">
@@ -109,7 +222,9 @@
 
 					</section>
 
-				<!-- Footer -->
+                </div>
+
+				    <!-- Footer -->
 					<section id="footer">
 						<section>
 							<p>
