@@ -271,14 +271,14 @@ input, select, textarea {
         @media screen and (min-width: 737px) {
             
             /* update */
-            ul.icons.column-li {
+            .items.contact-me-items ul.icons.column-li {
                 -moz-align-items: flex-start;
                 -webkit-align-items: flex-start;
                 -ms-align-items: flex-start;
                 align-items: flex-start;
             }
             
-            ul.icons.column-li > li {
+            .items.contact-me-items ul.icons.column-li > li {
 
                 display: -moz-flex;
                 display: -webkit-flex;
@@ -306,7 +306,7 @@ input, select, textarea {
                 align-items: baseline;
             }
 
-            ul.icons.column-li > li > i {
+            .items.contact-me-items ul.icons.column-li > li > i {
                 margin-right: 5px;
             }
 	}
