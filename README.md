@@ -1,4 +1,4 @@
-# tnndr7.github.io
+# nandarblender.com
 My Portfolio website
 
 CODE
