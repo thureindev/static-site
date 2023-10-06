@@ -1,4 +1,5 @@
 # nandarblender.com
+## This repo is archived and no longer the site for the above domain. 
 T_Nandar Portfolio website
 
 CODE
